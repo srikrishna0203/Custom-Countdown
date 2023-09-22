@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom count-down</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiAdNLLg0LV1RPDFxtMBkbu6szEwt17V8WUqL8BykeShLvpI8ny-_ee7vvhYqRtH9QAlA&usqp=CAU">
+  </head>
+  <body>
+    <!-- video -->
+    <video class="videocont" muted loop autoplay>
+      <source src="time_-_6358 (540p) (1).mp4" />
+    </video>
+    <!-- video background -->
+    <div class="video-overlay"></div>
+
+    <!-- input field -->
+    <div class="container" id="input-cont" >
+        <h1>create a custom count-down</h1>
+        <form class="form" id="countdownform"> 
+          <label>Title</label>
+          <input type="text" placeholder="What are you counting down to........." id="inputfield"/>
+          <label>Select-Date</label>
+          <input type="date" id="datecont"/>
+          <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!--count-down title -->
+    <div class="count-down" id="count-down">
+        <h1 id="count-down-title">countdown Title here</h1>
+        <ul>
+            <li id="day"><span></span> Days</li>
+            <li id="hour"><span></span> Hours</li>
+            <li id="Minute"><span></span> Minutes</li>
+            <li id="second"><span></span> Seconds</li>
+        </ul>
+        <button id="reset">Reset</button>
+    </div>
+
+  <!-- completed -->
+    <div class="complete" id="complete">
+        <h1 id="complete-title">Countdown Complete</h1>
+        <h1 id="complete-info"></h1>
+        <button id="complete-button">New Countdown</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
